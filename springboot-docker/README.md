@@ -3,7 +3,7 @@ Springboot集成Docker
 
 欢迎学习交流   
 
-##Dockerfile解释：   
+## Dockerfile解释：   
 1、FROM:指明当前镜像继承的基镜像,编译当前镜像时候会自动下载基镜像   
 2、MAINTAINER:当前镜像的作者和邮箱,使用空格隔开   
 3、VOLUME:挂载目录   
@@ -19,14 +19,15 @@ ENTRYPOINT 执行项目 app.jar。为了缩短 Tomcat 启动时间，添加一�
 
 如果是第一次打包，它会自动下载java 8的镜像作为基础镜像，以后再制作镜像的时候就不会再下载了。
 
-##编译、运行：
+## 编译、运行：
 1、编译   
 mvn clean install -DskipTests docker:build  
 或者  
-点击idea的maven插件中的docker:build  
+点击idea的maven插件中的docker:build(前提是maven先clean&install)   
 
 2、编译成功   
 查看/src/resources/static/img/docker_build_succ.jpg   
+![Image text](https://github.com/nicxsky/springboot-collection/raw/main/springboot-docker/src/main/resources/static/img/docker_build_succ.jpg)   
 
 3、查看镜像   
 docker images   
@@ -59,9 +60,10 @@ docker rmi $( docker images -q)
 
 6、接口调用   
 查看/src/resources/static/img/api_succ.jpg   
+![Image text](https://github.com/nicxsky/springboot-collection/raw/main/springboot-docker/src/main/resources/static/img/api_succ.jpg)   
 
 
-##问题&解决：
+## 问题&解决：
 1、docker远程连接失败,提示我们连接被拒绝(failed: Connection refused: connect)   
 docker 开启2375端口，提供外部访问docker   
 vim /usr/lib/systemd/system/docker.service   
