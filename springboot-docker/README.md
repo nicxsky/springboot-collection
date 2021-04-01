@@ -3,7 +3,7 @@ Springboot集成Docker
 
 欢迎学习交流   
 
-##Dockerfile解释：
+##Dockerfile解释：   
 1、FROM:指明当前镜像继承的基镜像,编译当前镜像时候会自动下载基镜像   
 2、MAINTAINER:当前镜像的作者和邮箱,使用空格隔开   
 3、VOLUME:挂载目录   
