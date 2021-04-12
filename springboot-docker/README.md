@@ -56,7 +56,7 @@ docker images
 删除镜像   
 docker rmi {image id}   
 删除全部镜像   
-docker rmi $( docker images -q)   
+docker rmi $(docker images -q)   
 
 6、接口调用   
 查看/src/resources/static/img/api_succ.jpg   
