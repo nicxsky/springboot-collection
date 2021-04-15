@@ -3,7 +3,7 @@
 Nacos server最新下载地址   
 https://github.com/alibaba/nacos/releases   
 
-安装   
+安装（提前安装好JDK环境）   
 cd /opt   
 wget https://github.com/alibaba/nacos/releases/download/2.0.0-bugfix/nacos-server-2.0.0.tar.gz   
 tar -zxvf nacos-server-2.0.0.tar.gz   
