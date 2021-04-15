@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: my-service-provider
+  cloud:
+    nacos:
+      config:
+        # 配置Nacos Server地址，用于配置的动态变更
+        server-addr: 192.168.164.128:8848
+# Nacos 注册中心客户端心跳日志禁用 get changedGroupKeys:[] 刷屏
+logging:
+  level:
+    com.alibaba.nacos.client.config.impl: WARN
